@@ -1,0 +1,1 @@
+select dt.id,dt.tanggal_order,dt.status_pelunasan,dt.tanggal_pembayaran,td.jumlah,td.jumlah * td.subtotal as "total" from detail_transaksi as "td" INNER JOIN data_transaksi as "dt" ON dt.id = td.id;
